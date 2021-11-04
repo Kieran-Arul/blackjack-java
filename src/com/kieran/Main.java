@@ -27,6 +27,11 @@ public class Main {
             boolean isValid = false;
             int bet = 0;
 
+            if (isBankrupt(PLAYER) || isBankrupt(DEALER)) {
+                System.out.println("Unable to play. One of the two players have gone bankrupt.");
+                break;
+            }
+
             while (!isValid) {
 
                 System.out.println(PLAYER.getName() + ", enter your bet");
@@ -248,6 +253,10 @@ public class Main {
             System.out.println("Both players hands are equal. Pot is split");
         }
 
+    }
+
+    private static boolean isBankrupt(Player player) {
+        return player.getChips() == 0;
     }
 
     private static void reset() {
