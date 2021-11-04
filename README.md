@@ -1,7 +1,7 @@
 ## Project Overview
 
 - This program allows you to play a game of blackjack against a computer controlled dealer
-- This implementation also includes the betting aspect of the game. Both the dealer and player will start with $100,000 worth of chips
+- This implementation also includes the betting aspect of the game, where both the dealer and player will start with $100,000 worth of chips
 
 ## How to Use
 
